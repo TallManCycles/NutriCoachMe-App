@@ -9,6 +9,10 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/home/calculator'
   },
   {
+    path: '/login',
+    component: () => import('@/views/auth/Login.vue')
+  },
+  {
     path: '/home/',
     component: TabsPage,
     children: [
